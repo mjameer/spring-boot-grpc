@@ -1,14 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0">
-    <artifactId>greeting-parent</artifactId>
 
-    <groupId>com.mj</groupId>
-
+    <!-- Project coordinates -->
     <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mj</groupId>
+    <artifactId>greeting-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>greeting-parent</name>
+    <packaging>pom</packaging>
+
+    <!-- Modules -->
     <modules>
         <module>greeting-common</module>
         <module>greeting-service</module>
     </modules>
-    <name>greeting-parent</name>
-    <packaging>pom</packaging>
-    <version>0.0.1-SNAPSHOT</version>
+
 </project>

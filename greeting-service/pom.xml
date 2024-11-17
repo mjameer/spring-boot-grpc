@@ -1,49 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <artifactId>grpc-spring-boot-example</artifactId>
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <groupId>org.springframework.boot</groupId>
-            </plugin>
-        </plugins>
-    </build>
-    <dependencies>
 
-        <dependency>
-            <artifactId>grpc-server-spring-boot-starter</artifactId>
-            <groupId>net.devh</groupId>
-            <version>2.12.0.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <artifactId>greeting-common</artifactId>
-            <groupId>com.mj</groupId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <groupId>org.springframework.boot</groupId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-    <description>Demo project for Spring Boot</description>
-    <groupId>com.mj</groupId>
-    <modelVersion>4.0.0</modelVersion>
-    <name>grpc-spring-boot-example</name>
+    <!-- Parent POM -->
     <parent>
-        <artifactId>spring-boot-starter-parent</artifactId>
         <groupId>org.springframework.boot</groupId>
-        <relativePath/>
+        <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.5.4</version> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
+
+    <!-- Project coordinates -->
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mj</groupId>
+    <artifactId>grpc-spring-boot-example</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>grpc-spring-boot-example</name>
+    <description>Demo project for Spring Boot</description>
+
+    <!-- Properties -->
     <properties>
         <java.version>11</java.version>
     </properties>
 
-    <version>0.0.1-SNAPSHOT</version>
+    <!-- Dependencies -->
+    <dependencies>
+        <dependency>
+            <groupId>net.devh</groupId>
+            <artifactId>grpc-server-spring-boot-starter</artifactId>
+            <version>2.12.0.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mj</groupId>
+            <artifactId>greeting-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!-- Build section -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
