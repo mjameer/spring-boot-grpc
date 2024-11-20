@@ -15,11 +15,16 @@ This project covers usage of gRPC in a Spring Boot application
 - [Mike's Spring Boot gRPC Starter](https://yidongnan.github.io/grpc-spring-boot-starter/en/server/getting-started.html)
 
 
+### Why gRPC
 
+- Communication via gRPC does not work natively work out of the box for web browser
+- Used in communication between MS and used for communication between FE and BE
 
 ### How do Protocol Buffers Work?
 
 The following diagram shows how you use protocol buffers to work with your data.
+
+![image](https://github.com/user-attachments/assets/419fec5d-6e1b-49ee-b85d-7aacb40953f4)
 
 
 ### Reference
