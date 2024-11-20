@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0">
 
-    <!-- Project coordinates -->
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.mj</groupId>
     <artifactId>greeting-parent</artifactId>
@@ -9,10 +8,28 @@
     <name>greeting-parent</name>
     <packaging>pom</packaging>
 
-    <!-- Modules -->
     <modules>
         <module>greeting-common</module>
         <module>greeting-service</module>
+        <module>greetings-client</module>
     </modules>
+
+    <properties>
+        <java.version>21</java.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <source>21</source>
+                    <target>21</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
