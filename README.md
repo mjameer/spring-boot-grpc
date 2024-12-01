@@ -16,7 +16,8 @@ This project covers usage of gRPC in a Spring Boot application
 
 ### What is gRPC 
 
-https://media.licdn.com/dms/image/v2/D5622AQHQr9ph1ERyKg/feedshare-shrink_1280/feedshare-shrink_1280/0/1733030012016?e=1735776000&v=beta&t=grlhJ02NqGSRdLHUCIlNH-BROe1y0Vh2B0cBuJHp96g
+![1733030012016](https://github.com/user-attachments/assets/8f3dac9a-dc3e-4f95-a3dc-2c4870cf6d91)
+
 
 ### Why gRPC
 
