@@ -22,7 +22,7 @@ This project covers usage of gRPC in a Spring Boot application
 ### Why gRPC
 
 - Communication via gRPC does not work natively work out of the box for web browser
-- Used in communication between MS and used for communication between FE and BE
+- Used in communication between MS and not much used for communication between FE and BE
 
 ### How do Protocol Buffers Work?
 
